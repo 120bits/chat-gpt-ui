@@ -153,9 +153,9 @@ export const MaxTokenSlider = ({
         step={1}
         className='w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer'
       />
-      <div className='min-w-fit text-gray-500 dark:text-gray-300 text-sm mt-2'>
-        {t('token.description')}
-      </div>
+      {/*<div className='min-w-fit text-gray-500 dark:text-gray-300 text-sm mt-2'>*/}
+      {/*  {t('token.description')}*/}
+      {/*</div>*/}
     </div>
   );
 };
