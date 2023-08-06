@@ -25,7 +25,7 @@ const RoleSelector = React.memo(
     const [dropDown, setDropDown, dropDownRef] = useHideOnOutsideClick();
 
     return (
-      <div className='prose dark:prose-invert relative'>
+      <div className='c-message__role-selector prose dark:prose-invert relative'>
         <button
           className='btn btn-neutral btn-small flex gap-1'
           type='button'

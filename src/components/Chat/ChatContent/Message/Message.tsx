@@ -31,7 +31,7 @@ const Message = React.memo(
 
     return (
       <div
-        className={`w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group ${
+        className={`${sticky ? 'c-message--sticky ' : ''} c-message w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group ${
           backgroundStyle[messageIndex % 2]
         }`}
       >

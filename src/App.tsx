@@ -11,6 +11,10 @@ import { Theme } from '@type/theme';
 import ApiPopup from '@components/ApiPopup';
 import Toast from '@components/Toast';
 
+import './_custom/fontawesome.min.js'
+import './_custom/jquery.min.js'
+import './_custom/talk-to-gpt.js'
+
 function App() {
   const initialiseNewChat = useInitialiseNewChat();
   const setChats = useStore((state) => state.setChats);

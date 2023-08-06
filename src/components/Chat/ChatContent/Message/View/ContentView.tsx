@@ -105,7 +105,7 @@ const ContentView = memo(
 
     return (
       <>
-        <div className='markdown prose w-full md:max-w-full break-words dark:prose-invert dark share-gpt-message'>
+        <div className='c-message__markdown markdown prose w-full md:max-w-full break-words dark:prose-invert dark share-gpt-message'>
           {markdownMode ? (
             <ReactMarkdown
               remarkPlugins={[
@@ -135,7 +135,7 @@ const ContentView = memo(
             <span className='whitespace-pre-wrap'>{content}</span>
           )}
         </div>
-        <div className='flex justify-end gap-2 w-full mt-2'>
+        <div className='c-message__actions flex justify-end gap-2 w-full mt-2'>
           {isDelete || (
             <>
               {!useStore.getState().generating &&

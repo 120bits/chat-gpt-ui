@@ -3,6 +3,8 @@ import useStore from '@store/store';
 
 import ContentView from './View/ContentView';
 import EditView from './View/EditView';
+import ReactMarkdown from 'react-markdown';
+import className = ReactMarkdown.propTypes.className;
 
 const MessageContent = ({
   role,
@@ -19,7 +21,7 @@ const MessageContent = ({
   const advancedMode = useStore((state) => state.advancedMode);
 
   return (
-    <div className='relative flex flex-col gap-2 md:gap-3 lg:w-[calc(100%-115px)]'>
+    <div className='c-message__content relative flex flex-col lg:w-[calc(100%-115px)]'>
       {advancedMode && <div className='flex flex-grow flex-col gap-3'></div>}
       {isEdit ? (
         <EditView

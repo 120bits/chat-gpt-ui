@@ -1,0 +1,36 @@
+.c-message:not(.c-message--sticky) {
+  .c-message__content {
+    margin-top: -6px;
+  }
+
+  .c-message__actions,
+  .c-message__role-selector {
+    display: none;
+  }
+
+  .c-message__role-selector {
+    margin-bottom: 16px;
+  }
+
+  &:hover {
+    .c-message__actions,
+    .c-message__role-selector {
+      display: flex;
+    }
+  }
+}
+
+.c-message__actions,
+.c-message-command-prompt {
+  margin-top: 10px;
+}
+
+.c-message--sticky {
+  .c-message__role-selector {
+    margin-bottom: 10px;
+  }
+}
+
+.c-token-count {
+  margin-top: -10px;
+}
